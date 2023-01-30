@@ -1,8 +1,6 @@
 # GitHub-Finder-App
 ---
-/*
-To do - write description
-*/
+This app is for searchig GitHub users. If you type the user name in the search, you will get user data from the GitHub database and display user´s information. 
 
 
 ## The app is built using:
