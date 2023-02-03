@@ -1,0 +1,25 @@
+@use "../abstracts/" as*;
+
+.bg-primary{
+    background-color: $bg-body;
+}
+.clr-primary-100 {
+    color: $primary-100;
+}
+.clr-primary-200 {
+    color: $primary-200;
+}
+.clr-primary-500 {
+    color: $primary-500;
+}
+
+
+.clr-secondary-100 {
+    color: $secondary-100;
+}
+.clr-secondary-200 {
+    color: $secondary-200;
+}
+.clr-secondary-500 {
+    color: $secondary-500;
+}

@@ -1,0 +1,41 @@
+@use "../base/" as *;
+
+.text {
+    &-center {
+        text-align: center;
+    }
+    &-left {
+        text-align: left;
+    }
+    &-right {
+        text-align: right;
+    }
+}
+.fs-14 {
+    font-size: $fs-14;
+}
+.fs-20 {
+    font-size: $fs-20;
+}
+.fs-24 {
+    font-size: $fs-24;
+}
+.fs-32 {
+    font-size: $fs-32;
+}
+.fs-36 {
+    font-size: $fs-36;
+}
+.fw-base {
+    font-weight: $font-weight-base;
+}
+.fw-medium {
+    font-weight: $font-weight-medium;
+}
+.fw-semibold {
+    font-weight: $font-weight-semibold;
+}
+.fw-bold {
+    font-weight: $font-weight-bold;
+}
+

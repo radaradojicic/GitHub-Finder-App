@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.contact {
+    display: flex;
+    .email {
+        display: flex;
+        flex-direction: column;
+    }
+}

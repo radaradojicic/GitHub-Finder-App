@@ -1,0 +1,24 @@
+@use "../abstracts/" as *;
+
+
+input[type=text] {
+    border: $border-none;
+    border-bottom: $input-buttom-border;
+    border-top-left-radius: $top-left-radius;
+    border-top-right-radius: $top-right-radius;
+    padding: $input-padding;
+    color: $input-text-clr;
+    font-size: $input-font-size;
+    background-color: $input-bg-color;
+    flex-grow: 1;
+    margin-right: 10px;
+    &:hover {
+        border-bottom: $input-border-hover;
+    }
+    &:focus {
+        border-bottom: $input-border-focus;
+    }
+    &:active {
+        border-bottom: $input-border-active;
+    }
+}
