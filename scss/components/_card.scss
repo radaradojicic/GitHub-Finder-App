@@ -13,19 +13,5 @@
             align-self: center;
         }
     }
-    .stats {
-        display: flex;
-        gap: $size-8;
-        .item {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    .information {
-        display: flex;
-        flex-direction: column;
-        gap: $size-4;
-        
-    }
 }
 

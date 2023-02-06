@@ -14,11 +14,11 @@ body {
 
 a {
     text-decoration: none;
+    color: $secondary-500;
 }
 
 .border-right {
     border-right-style: outset;
-    box-shadow: $box-shadow-2;
     border-right-width: 3px;
     padding-right: inherit;
 }

@@ -18,10 +18,11 @@ $size-15: 10rem;
 
 //border
 $border-none: none;
-$border-buttom: 2px solid $primary-200;
-$border-buttom-hover: $size-1 solid $primary-200;
-$border-buttom-focus: $size-1 solid $primary-200;
-$border-buttom-active: $size-1 solid $primary-200;
+$outline-none: none;
+$border-bottom: $size-1 solid $primary-200;
+$border-bottom-hover: $size-1 solid $primary-500;
+$border-bottom-focus: $size-1 solid $primary-500;
+$border-bottom-active: $size-1 solid $primary-500;
 
 
 //border-radius
@@ -35,8 +36,8 @@ $border-radius-3: 6.25rem;
 
 //shadows
 
-$box-shadow-1: 0px, 4px, 8px rgba(0, 0, 0, 0.25);
-$box-shadow-2: 0px, 8px, 24px rgba(14, 82, 80, 0.44);
+$box-shadow-1: 0px 4px 8px rgba(0, 0, 0, 0.25);
+$box-shadow-2: 0px 8px 24px rgba(14, 82, 80, 0.44);
 
 //buttons
 
@@ -54,15 +55,15 @@ $site-header-padding: $size-8 0;
 
 //input
 
-$input-buttom-border: $border-buttom;
+$input-bottom-border: $border-bottom;
 $input-border-radius: $top-left-radius $top-right-radius;
 $input-padding: $size-1 $size-3;
 $input-text-clr: $secondary-200;
 $input-font-size: $size-4;
 $input-bg-color: $clr-white;
-$input-border-hover: $border-buttom-hover;
-$input-border-active: $border-buttom-active;
-$input-border-focus: $border-buttom-focus;
+$input-border-hover: $border-bottom-hover;
+$input-border-active: $border-bottom-active;
+$input-border-focus: $border-bottom-focus;
 
 //card 
 
