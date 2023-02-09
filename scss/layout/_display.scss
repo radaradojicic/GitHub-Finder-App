@@ -1,5 +1,8 @@
 @use "../abstracts/" as *;
 
+.d-block {
+    display: block;
+}
 .d-flex {
     display: flex;
 }
@@ -14,6 +17,9 @@
 
 .center-items {
     place-items: center;
+}
+.justify-content {
+    justify-content: space-between;
 }
 
 .gap-1 {

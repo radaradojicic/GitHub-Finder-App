@@ -139,6 +139,10 @@ input[type=text]:active {
   align-self: center;
 }
 
+.d-block {
+  display: block;
+}
+
 .d-flex {
   display: flex;
 }
@@ -153,6 +157,10 @@ input[type=text]:active {
 
 .center-items {
   place-items: center;
+}
+
+.justify-content {
+  justify-content: space-between;
 }
 
 .gap-1 {
@@ -209,6 +217,10 @@ input[type=text]:active {
   font-size: 14px;
 }
 
+.fs-16 {
+  font-size: 16px;
+}
+
 .fs-20 {
   font-size: 20px;
 }
@@ -256,6 +268,9 @@ input[type=text]:active {
 .mt-3 {
   margin-top: 3rem;
 }
+.mt-4 {
+  margin-top: 4rem;
+}
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -284,6 +299,9 @@ input[type=text]:active {
 }
 .m-2 {
   margin: 2rem;
+}
+.mt-1 {
+  margin-top: 1rem;
 }
 .mt-2 {
   margin-top: 2rem;
@@ -363,7 +381,7 @@ input[type=text]:active {
 .card-img {
   width: 150px;
   height: 150px;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=index.css.map */
