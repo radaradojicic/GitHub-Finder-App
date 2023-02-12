@@ -12,3 +12,4 @@ This app is for searchig GitHub users. If you type the user name in the search, 
 - API
 
 ## Screenshot
+image.png
