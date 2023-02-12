@@ -12,5 +12,6 @@ This app is for searchig GitHub users. If you type the user name in the search, 
 - API
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/113382298/218330994-623c4ba7-9cc0-4e2f-a0a6-df84868e5634.png)
+![image](https://user-images.githubusercontent.com/113382298/218331083-685ab392-4166-4867-8c10-d7818180ddc6.png)
+
 
