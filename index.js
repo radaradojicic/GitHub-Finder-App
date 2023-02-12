@@ -26,63 +26,17 @@ const toMonth = (month) => {
         return 'December';
     }
 }
-//second way**
-//const toMonthStr = (month) => {
-   // let str = '';
-   // console.log(Number(month))
-   // if (Number(month) === 1) {
-   //     str = 'January';
-    //} else if (Number(month) === 2) {
-   //     str = 'February';
-   // } else if (Number(month) === 3) {
-   //     str = 'March';
-   // } else if (Number(month) === 4) {
-   //     str = 'April';
-   // } else if (Number(month) === 5) {
-   //     str = 'May;';
-   // } else if (Number(month) === 6) {
-   //     str = 'June';
-  //  } else if (Number(month) === 7) {
-  //      str = 'July';
-   // } else if (Number(month) === 8) {
-   //     str = 'August';
-  //  } else if (Number(month) === 9) {
-   //     str = 'September';
-  //  }  else if (Number(month) === 10) {
-  //      str = 'October';
-   // } else if (Number(month) === 11) {
-   //     str = 'November';
-   // } else if (Number(month) === 12) {
-  //      str = 'December';
-  //  }
-  //  return str;
-//}
 
 const getUser = async (githubUsername) => {
     try { 
         document.getElementById('results').innerHTML = '';
         const url = `https://api.github.com/users/${githubUsername}`;
-        //const url2 = `https://api.github.com/users/` + githubUsername;
-        //console.log (url2);
-        //const response = await fetch(url);
-        //const json = await response.json(); *response je json onjekat
-        //prvo dobavimo podatke, stavimo ih u zagradu i onda sacekamo da se ti podaci transformisu u json objekat
+       
         const response = await (await fetch(url)).json();
         console.log(response)
 
-        //new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) 
-       // console.log(new Date());
-         //ispisivanje rezultata u kontejneru "results"
        const result = document.getElementById('results');
-       // const created_at = new Date();
-        //created_at.toDateString();
-
-        // if (response.message === '2022-09-12T18:21:24Z') {
-       //     let responseText 
-       // }
-
-    
-        
+     
         if (response.message === 'Not Found') {
             let responseText = `
                 <article class="card">
