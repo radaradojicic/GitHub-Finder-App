@@ -19,6 +19,6 @@ a {
 
 .border-right {
     border-right-style: outset;
-    border-right-width: 3px;
+    border-right-width: $size-16;
     padding-right: inherit;
 }

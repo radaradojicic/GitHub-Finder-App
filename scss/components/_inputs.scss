@@ -10,7 +10,7 @@ input[type=text] {
     color: $input-text-clr;
     font-size: $input-font-size;
     background-color: $input-bg-color;
-    margin-right: 10px;
+    margin-right: $size-17;
     &:hover {
         border-bottom: $input-border-hover;
     }
