@@ -33,7 +33,7 @@ const getUser = async (githubUsername) => {
         const url = `https://api.github.com/users/${githubUsername}`;
        
         const response = await (await fetch(url)).json();
-        console.log(response)
+
 
        const result = document.getElementById('results');
      
@@ -41,9 +41,10 @@ const getUser = async (githubUsername) => {
             let responseText = `
                 <article class="card">
                     <h2>User Not Found</h2>
+                    <img class="gif-img mt-1 w-100" src="./assets/images/tom.gif">
                 </article>
                 `;
-            console.log(result)
+
             result.insertAdjacentHTML('afterbegin', responseText);
         } else {
             const avatar_url = response.avatar_url;
@@ -57,12 +58,9 @@ const getUser = async (githubUsername) => {
             const bio = response.bio ? response.bio : 'No bio';
             let created_at = response.created_at;
             created_at = created_at.split('T')[0]; 
-            //2020-06-18
-            console.log(created_at.split('-')); // ['2020', '06', '18']
-            //18. septembar 2020
-            const yyyy = created_at.split('-')[0]; //2020
-            const mm = created_at.split('-')[1]; //06
-            const dd = created_at.split('-')[2]; //18
+            const yyyy = created_at.split('-')[0]; 
+            const mm = created_at.split('-')[1]; 
+            const dd = created_at.split('-')[2];
 
             let str_date = `${dd}. ${toMonth(mm)} ${yyyy}`;
 
@@ -97,17 +95,7 @@ const getUser = async (githubUsername) => {
             `;
             result.insertAdjacentHTML('afterbegin', card);
         }
-        const footer = `
-                <footer class="p-1 mt-2 bg-footer border-radius-2">
-                    <p class="fw-regular">&copy;2023 GitHub Finder App | All Rights Reserved</p>
-                    <p class="fw-regular">This project is coded by <a href="https://github.com/radaradojicic" target="_blank"
-                            class="fw-semibold"> Rada
-                            Radojicic </a>and is <a href="https://github.com/radaradojicic/GitHub-Finder-App.git" target="_blank"
-                            class="fw-semibold">open-sourced</a> on GitHub.
-                    </p>
-                </footer>        
-        `;
-            result.insertAdjacentHTML('beforeend', footer);
+        
             
     } catch (err) {
         document.getElementById('results').innerHTML = '';
@@ -125,14 +113,13 @@ const getUser = async (githubUsername) => {
 const onSearch = () => {
     document.getElementById('results').innerHTML = '';
     if (!username.value) {
-        //korisnik nije uneo nista u Search
-        //alert('Please Enter Username');
+
         const errorUsername = document.getElementById('error-username');
         errorUsername.innerHTML = 'Please enter username';
     } else {
-        //to do fetch data
-        //poziv funkcije getUser prosledjujemo joj uneseni username
+
         getUser(username.value); //vrednost koju prosledjujemo
+        document.getElementById("onSearch").reset();
     }
 
 }

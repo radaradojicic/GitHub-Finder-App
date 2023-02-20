@@ -48,10 +48,16 @@ h2, .h2 {
   font-weight: 400;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #EBF5F7;
   font-family: "Poppins", sans-serif;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -68,6 +74,16 @@ a {
   border-right-style: outset;
   border-right-width: 3px;
   padding-right: inherit;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  bottom: 1rem;
 }
 
 .btn {
@@ -394,6 +410,12 @@ input[type=text]:active {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.gif-img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1.25rem;
 }
 
 /*# sourceMappingURL=index.css.map */

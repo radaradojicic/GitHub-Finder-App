@@ -1,11 +1,19 @@
 @use "../abstracts/" as*;
 @use "./typography" as*;
 
+
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: $bg-body;
     font-family: $ff-base;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .wrapper {
     max-width: 530px;
@@ -22,3 +30,19 @@ a {
     border-right-width: $size-16;
     padding-right: inherit;
 }
+   
+  main {
+    flex: 1;
+  }
+  
+  footer {
+    width: 100%;
+    margin: 0 auto;
+    bottom: 1rem;
+  }
+
+  
+  
+  
+  
+  
